@@ -1,0 +1,15 @@
+C:\Users\guill\source\repos\Micka + Loop\bin\Debug\Micka + Loop.exe.config
+C:\Users\guill\source\repos\Micka + Loop\bin\Debug\Micka + Loop.exe
+C:\Users\guill\source\repos\Micka + Loop\bin\Debug\Micka + Loop.pdb
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop.csproj.AssemblyReference.cache
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\MainWindow.g.cs
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\App.g.cs
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop_MarkupCompile.cache
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop_MarkupCompile.lref
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\MainWindow.baml
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop.g.resources
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka___Loop.Properties.Resources.resources
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop.csproj.GenerateResource.cache
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop.csproj.CoreCompileInputs.cache
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop.exe
+C:\Users\guill\source\repos\Micka + Loop\obj\Debug\Micka + Loop.pdb
