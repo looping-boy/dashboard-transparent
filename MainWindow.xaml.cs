@@ -36,14 +36,28 @@ namespace Micka___Loop
                 this.DragMove();
         }
 
-
         private void bouton_Click(object sender, RoutedEventArgs e)
         {
+            this.WindowState = WindowState.Minimized;
+        }
 
+        private void minimize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void maximize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Maximized;
+        }
+
+        private void close(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 
-    
+
     enum AccentState
     {
         ACCENT_ENABLE_BLURBEHIND = 3

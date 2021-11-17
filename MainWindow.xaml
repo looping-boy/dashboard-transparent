@@ -5,30 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Micka___Loop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        AllowsTransparency="True" WindowStyle="None"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
+        AllowsTransparency="True" 
+        WindowStyle="None"
         MouseDown="Window_MouseDown"
         >
-
+    
     <Window.Background>
-        <SolidColorBrush Opacity="0.1" Color="White"/>
+        <SolidColorBrush Opacity="0.1" Color="LightPink"/>
     </Window.Background>
+
+    
     <Grid>
+        
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="*"/>
-            
             <ColumnDefinition  Width="*"/>
             <ColumnDefinition  Width="*"/>
         </Grid.ColumnDefinitions>
         
         <Grid.RowDefinitions>
+            <RowDefinition  Height="20"/>
             <RowDefinition  Height="*"/>
             <RowDefinition  Height="*"/>
             <RowDefinition  Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid Grid.Row="0" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="4*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name ="minimize_btn" Click="minimize" Grid.Column="1">
+                <Button.Content>
+                    <Canvas Height="0" Width="0">
+                        <Ellipse
+                            Width="20"
+                            Height="20"
+                            Stroke="Black"
+                            Fill="Orange"
+                            StrokeThickness="4"
+                        />
+                    </Canvas>
+                </Button.Content>
+            </Button>
+            <Button x:Name ="maximize_btn" Click="maximize" Grid.Column="2">
+                <Button.Content>
+                    <Canvas  Height="0" Width="0">
+                        <Ellipse
+                            Width="20"
+                            Height="20"
+                            Stroke="Black"
+                            Fill="LightGreen"
+                            StrokeThickness="4"
+                        />
+                    </Canvas>
+                </Button.Content>
+            </Button>
+            <Button x:Name ="close_btn" Click="close"  Grid.Column="3" Background="Transparent" Visibility="Visible">
+                
+                    <Canvas Height="0" Width="0" Grid.Column="3">
+                        <Ellipse
+                        Width="20"
+                        Height="20"
+                        Stroke="Black"
+                        Fill="OrangeRed"
+                        StrokeThickness="4"
+                       />
+                    </Canvas>
+                
+            </Button>
+        </Grid>
+        <Button  Grid.Column="2" Grid.Row="2" Content="Sat" Width="100" Height="100" />
         <Button x:Name ="bouton" Grid.Column="2" Grid.Row="3" Content="Salut" Width="100" Height="100" Click="bouton_Click"/>
         <Rectangle Grid.Column="1" Grid.Row="1" Width="Auto" Height="Auto" Fill="Aqua"/>
-
     </Grid>
+
+   
 </Window>
