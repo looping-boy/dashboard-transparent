@@ -11,16 +11,20 @@
         AllowsTransparency="True" 
         WindowStyle="None"
         MouseDown="Window_MouseDown"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
         >
+  
     
-    <Window.Background>
-        <SolidColorBrush Opacity="0.1" Color="LightPink"/>
-    </Window.Background>
 
-    
+    <Border CornerRadius="50" BorderThickness="2">
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Black" Offset="0.0"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
     <Grid>
-        
-        
+                
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="*"/>
             <ColumnDefinition  Width="*"/>
@@ -44,7 +48,7 @@
                 <ColumnDefinition  Width="30"/>
                 <ColumnDefinition  Width="0.5*"/>
                 <ColumnDefinition  Width="30"/>
-                <ColumnDefinition  Width="1*"/>
+                <ColumnDefinition  Width="0.5*"/>
             </Grid.ColumnDefinitions>
 
             <Button x:Name ="minimize_btn" Click="minimize" Grid.Column="2">
@@ -131,5 +135,5 @@
         <Rectangle Grid.Column="1" Grid.Row="1" Width="Auto" Height="Auto" Fill="Aqua"/>
     </Grid>
 
-   
+    </Border>
 </Window>
