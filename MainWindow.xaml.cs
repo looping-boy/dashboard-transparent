@@ -53,7 +53,8 @@ namespace Micka___Loop
 
         private void close(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            //this.Close();
+            Application.Current.MainWindow.Close();
         }
     }
 
