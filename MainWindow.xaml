@@ -17,7 +17,7 @@
   
     
 
-    <Border CornerRadius="50" BorderThickness="2">
+    <Border BorderThickness="2">
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="Black" Offset="0.0"/>
@@ -131,8 +131,14 @@
             </Button>
         </Grid>
         <Button  Grid.Column="2" Grid.Row="2" Content="Sat" Width="100" Height="100" />
-        <Button x:Name ="bouton" Grid.Column="2" Grid.Row="3" Content="Salut" Width="100" Height="100" Click="bouton_Click"/>
-        <Rectangle Grid.Column="1" Grid.Row="1" Width="Auto" Height="Auto" Fill="Aqua"/>
+            <Button x:Name="bouton" Grid.Column="2" Grid.Row="3" Width="200" Height="100" Click="bouton_Click">
+                <TextBlock TextWrapping="Wrap">
+        Minimize window for
+        <LineBreak />
+        3 seconds
+                </TextBlock>
+            </Button>
+            <Rectangle Grid.Column="1" Grid.Row="1" Width="Auto" Height="Auto" Fill="Aqua"/>
     </Grid>
 
     </Border>
